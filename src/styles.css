@@ -1,1 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+:root {
+  --line-border-fill: #00bad2;
+  --line-border-empty: #ccd8e5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  color: #212121;
+  margin-bottom: 90px;
+}
+
+/* Aprobado */
+
+.ico_aprobado_inactivo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_aprobado_inactivo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ico_aprobado_activo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_aprobado_activo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* En ruta */
+
+.ico_enruta_inactivo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_enruta_inactivo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ico_enruta_activo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_enruta_activo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Entregado taller */
+
+.ico_entregado_taller_inactivo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_entregado_taller_inactivo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ico_entregado_taller_activo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_entregado_taller_activo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Retrasado */
+
+.ico_retrasado_inactivo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_retrasado_inactivo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ico_retrasado_activo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_retrasado_activo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Recibido taller */
+
+.ico_recibido_taller_inactivo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_recibido_taller_inactivo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ico_recibido_taller_activo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_recibido_taller_activo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Devolucion */
+
+.ico_devolucion_inactivo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_devolucion_inactivo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ico_devolucion_activo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_devolucion_activo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Terminado */
+
+.ico_terminado_inactivo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_terminado_inactivo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ico_terminado_activo {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  background-image: url(./icons/ico_terminado_activo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 655px;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #ccd8e5;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  border: 3px solid #ccd8e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  color: #fff;
+  border-radius: 6px;
+  border: 0;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}
+
 /* You can add global styles to this file, and also import other style files */
